@@ -1,0 +1,145 @@
+@import "_root.css";
+
+body {
+    background-color: #141519;
+    color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.interactive-ratings-component {
+    max-width: 370px;
+    height: 373px;
+    padding: 20px 28px;
+    border-radius: 30px;
+    background-color: var(--Dark-blue);
+    background: radial-gradient(circle at center top, rgba(34,41,51,1) 20%, rgba(31,38,48,1) 35%, rgba(23,30,40,1) 100%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    overflow: hidden;
+}
+
+.interactive-ratings-component>.step {
+    display: none;
+}
+.interactive-ratings-component>.step.active {
+    display: block;
+}
+.interactive-ratings-component .step .head {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-top: 1.25em;
+    margin-bottom: 0.4em;
+}
+.interactive-ratings-component .step .content {
+    margin-top: 0.5em;
+    line-height: 1.5;
+}
+.interactive-ratings-component .step .action {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.star-icon {
+    margin-top: 5px;
+}
+.star-icon svg{
+    height: 18px;
+    width: 18px;
+}
+
+/* .interactive-ratings-component  */
+
+.ratings {
+    margin: 20px 0;
+    display: flex;
+    height: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.ratings>*{
+    /* flex-grow: 1; */
+    /* border: 1px solid var(--light-grey); */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s, color 0.9s;
+}
+
+
+.btn.active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--color-primary-orange);
+    color: var(--white);
+}
+
+.large-btn {
+    display: block;
+    background-color: var(--color-primary-orange);
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    border-radius: 35px;
+    letter-spacing: 2px;
+}
+
+.large-btn:hover {
+    background-color: var(--white);
+    color: var(--color-primary-orange);
+}
+
+.thank-you-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.thank-you-box-image {
+    width: 145px;
+    background-image: url("../images/illustration-thank-you.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding: 0; 
+    padding-bottom: 130px;
+    margin-top: 20px;
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
