@@ -135,6 +135,17 @@ body {
     padding-bottom: 130px;
     margin-top: 20px;
 }
+.selected-ratings-badge{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-primary-orange);
+    border-radius: 20px;
+    display: inline-block;
+    padding : 6px 15px 5px;
+}
+
+.interactive-ratings-component .thank-you-box .head {
+    margin-bottom: 2px;
+}
 
 .attribution { 
     position: fixed;
